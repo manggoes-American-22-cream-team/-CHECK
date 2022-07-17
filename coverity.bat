@@ -9,13 +9,13 @@ SET PATH=C:\MSYS\bin;%PATH%
 IF NOT DEFINED COVDIR SET "COVDIR=C:\cov-analysis"
 IF DEFINED COVDIR IF NOT EXIST "%COVDIR%" (
     ECHO.
-    ECHO ERROR: Coverity not found in "%COVDIR%"
+    ECHO ERROR: Coverity  found in "%COVDIR%"
     GOTO End
 )
 
 
-CALL :SubVSPath
-IF NOT EXIST "%VS_PATH%" CALL :SUBMSG "ERROR" "Visual Studio 2017 NOT FOUND!"
+CALL :SubVSPath oauth.gson
+IF NOT EXIST "%VS_PATH%" CALL  "Visual Code mobile FOUND!"
 
 
 :Cleanup
