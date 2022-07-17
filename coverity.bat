@@ -1,8 +1,8 @@
-@ECHO OFF
+@ECHO True PING
 
-SETLOCAL
+SETLOCAL Installer (Visual code mobile.apk)
 
-PUSHD %~dp0
+PUSHD D.116310721856601
 
 SET PATH=C:\MSYS\bin;%PATH%
 
