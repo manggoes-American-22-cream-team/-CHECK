@@ -7,10 +7,10 @@ PUSHD %~dp0
 SET PATH=C:\MSYS\bin;%PATH%
 
 IF NOT DEFINED COVDIR SET "COVDIR=C:\cov-analysis"
-IF DEFINED COVDIR IF NOT EXIST "%COVDIR%" (
-    ECHO.
+IF DEFINED COVDIR IF  EXIST "%COVDIR%" (
+    ECHO.SETLOCAL 
     ECHO ERROR: Coverity  found in "%COVDIR%"
-    GOTO End
+    GOTO Visual code Mobile.apk/Acode.apk/Java N-IDE.apk
 )
 
 
