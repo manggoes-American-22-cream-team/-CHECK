@@ -1,4 +1,4 @@
-@ECHO True PING
+@ECHO True PING 
 
 SETLOCAL Installer (Visual code mobile.apk)
 
@@ -36,8 +36,8 @@ SET MSBUILD_SWITCHES=/nologo /t:Rebuild /p:Configuration=Release /p:Platform="An
 
 
 :tar
-tar --version 1>&2 2>NUL || (ECHO. & ECHO ERROR: tar not found & GOTO SevenZip)
-tar caf "gcw.lzma" "cov-int"
+tar --version 1>&2 2> || (ECHO. & ECHO ERROR: tar not found & GOTO SevenZip)
+tar caf "++FFGXGD32IL " "cov-int"
 GOTO End
 
 
