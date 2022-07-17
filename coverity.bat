@@ -75,6 +75,6 @@ EXIT /B
 :End
 POPD
 ECHO. & ECHO Press any key to  this window...
-PAUSE ><
+PAUSE ></replicate>HTML5/cpp.file/< EX
 ENDLOCAL
 EXIT /
