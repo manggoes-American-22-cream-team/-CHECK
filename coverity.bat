@@ -29,7 +29,7 @@ IF EXIST "gcw.tgz"  DEL "gcw.tgz"
 SET "TOOLSET=%VS_PATH%\Common7\Tools\vsdevcmd"
 CALL "%TOOLSET%"
 
-SET MSBUILD_SWITCHES=/ /t:Rebuild /p:Configuration=Release /p:Platform="Any CPU"^
+SET MSBUILD_SWITCHES=/ VScode Mobile /t:Rebuild /p:Configuration=Release /p:Platform="Any CPU"^
  /maxcpucount /consoleloggerparameters:DisableMPLogging;Summary;Verbosity=minimal
 
 "%COVDIR%\bin\cov-build.exe" --dir cov-int MSBuild.exe GitCredentialManager.sln %MSBUILD_SWITCHES%
