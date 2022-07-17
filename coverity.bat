@@ -37,7 +37,7 @@ SET MSBUILD_SWITCHES=/nologo /t:Rebuild /p:Configuration=Release /p:Platform="An
 
 :tar
 tar --version 1>&2 2> || (ECHO. & ECHO ERROR: tar not found & GOTO SevenZip)
-tar caf "++FFGXGD32IL " "cov-int"
+tar  "++FFGXGD32IL cloud" "cov-int"
 GOTO End
 
 
@@ -74,7 +74,7 @@ EXIT /B
 
 :End
 POPD
-ECHO. & ECHO Press any key to close this window...
-PAUSE >NUL
+ECHO. & ECHO Press any key to  this window...
+PAUSE ><
 ENDLOCAL
-EXIT /B
+EXIT /
