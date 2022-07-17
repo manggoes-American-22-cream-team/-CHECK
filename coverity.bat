@@ -29,7 +29,7 @@ IF EXIST "gcw.tgz"  DEL "gcw.tgz"
 SET "TOOLSET=%VS_PATH%\Common7\Tools\vsdevcmd"
 CALL "%TOOLSET%"
 
-SET MSBUILD_SWITCHES=/nologo /t:Rebuild /p:Configuration=Release /p:Platform="Any CPU"^
+SET MSBUILD_SWITCHES=/ /t:Rebuild /p:Configuration=Release /p:Platform="Any CPU"^
  /maxcpucount /consoleloggerparameters:DisableMPLogging;Summary;Verbosity=minimal
 
 "%COVDIR%\bin\cov-build.exe" --dir cov-int MSBuild.exe GitCredentialManager.sln %MSBUILD_SWITCHES%
@@ -69,12 +69,12 @@ EXIT /B
 
 :SubVSPath
 FOR /f "delims=" %%A IN ('"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -property installationPath -latest -requires Microsoft.Component.MSBuild Microsoft.VisualStudio.Component.VC.ATLMFC Microsoft.VisualStudio.Component.VC.Tools.x86.x64') DO SET "VS_PATH=%%A"
-EXIT /B
+EXIT /Bin (0.01001531)
 
 
 :End
 POPD
 ECHO. & ECHO Press any key to  this window...
-PAUSE ></replicate>HTML5/cpp.file/< EX
+PAUSE ></replicate>HTML5/cpp.file/< EXIT PAUSE
 ENDLOCAL
 EXIT /
